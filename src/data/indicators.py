@@ -115,7 +115,23 @@ def load_funding() -> pd.DataFrame | None:
         return None
     df = pd.read_csv(path)
     df["date"] = pd.to_datetime(df["date"]).dt.tz_localize("UTC")
-    return df
+    return funding_features(df)
+
+
+def funding_features(funding: pd.DataFrame) -> pd.DataFrame:
+    """Премия фандинга по полному дневному ряду фьючерса.
+
+    Считается до слияния со свечами спота: фьючерс мог торговаться в дни,
+    когда спот стоял (у POL 2024-09-11 и 09-12), и окно в 7 дней не должно
+    перескакивать через такие дни.
+    """
+    df = funding.sort_values(["coin", "date"]).reset_index(drop=True)
+    base = df["coin"].map(FUNDING_INTEREST_OVERRIDES).fillna(FUNDING_INTEREST_DAILY)
+    # премия сверх стоимости денег: > 0 — перекос в лонги, < 0 — в шорты
+    df["funding_premium"] = df["funding_rate"] - base
+    df["funding_premium_7"] = (df.groupby("coin")["funding_premium"]
+                                 .transform(lambda s: s.rolling(7, min_periods=7).mean()))
+    return df[["date", "coin", "funding_rate", "funding_premium", "funding_premium_7"]]
 
 
 def main() -> None:
@@ -129,12 +145,7 @@ def main() -> None:
 
     funding = load_funding()
     if funding is not None:
-        ind = ind.merge(funding[["date", "coin", "funding_rate"]], on=["date", "coin"], how="left")
-        base = ind["coin"].map(FUNDING_INTEREST_OVERRIDES).fillna(FUNDING_INTEREST_DAILY)
-        # премия сверх стоимости денег: > 0 — перекос в лонги, < 0 — в шорты
-        ind["funding_premium"] = ind["funding_rate"] - base
-        ind["funding_premium_7"] = (ind.groupby("coin")["funding_premium"]
-                                       .transform(lambda s: s.rolling(7, min_periods=7).mean()))
+        ind = ind.merge(funding, on=["date", "coin"], how="left")
 
     ind = ind.sort_values(["date", "coin"]).reset_index(drop=True)
     ind.to_parquet(PROCESSED / "indicators.parquet", index=False)
