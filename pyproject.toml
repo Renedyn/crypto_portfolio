@@ -1,0 +1,15 @@
+[project]
+name = "crypto-portfolio"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "pandas>=3.0.6",
+    "pyarrow>=26.0.0",
+    "requests>=2.34.2",
+]
+
+[tool.uv]
+# Не ставим релизы моложе 14 дней (политика cooldown)
+exclude-newer = "2026-10-18T00:00:00Z"
+# Исключение: certifi 2026.10.18 закрывает PYSEC-2026-4320 (одобрено 2026-11-01)
+exclude-newer-package = { certifi = "2026-10-20T00:00:00Z" }
