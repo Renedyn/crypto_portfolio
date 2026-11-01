@@ -1,0 +1,22 @@
+coin,coinmetrics_asset,name,selected_from,selected_through,migration_source
+BTC,btc,Bitcoin,2020-01-01,2026-10-30,
+ETH,eth,Ethereum,2020-01-01,2026-10-30,
+BNB,bnb,BNB,2020-01-01,2026-10-30,
+XRP,xrp,XRP,2020-01-01,2026-10-30,
+ADA,ada,Cardano,2020-01-01,2026-10-30,
+SOL,sol,Solana,2020-01-01,2026-10-30,
+DOGE,doge,Dogecoin,2020-01-01,2026-10-30,
+TRX,trx,TRON,2020-01-01,2026-10-30,
+DOT,dot,Polkadot,2020-01-01,2026-10-30,
+LTC,ltc,Litecoin,2020-01-01,2026-10-30,
+LINK,link,Chainlink,2020-01-01,2026-10-30,
+AVAX,avax,Avalanche,2020-01-01,2026-10-30,
+POL,matic,Polygon,2020-01-01,2024-09-03,https://polygon.technology/blog/matic-to-pol-migration-is-now-live-everything-you-need-to-know
+POL,pol,POL (ex-MATIC),2024-09-04,2026-10-30,https://polygon.technology/blog/matic-to-pol-migration-is-now-live-everything-you-need-to-know
+XLM,xlm,Stellar,2020-01-01,2026-10-30,
+ATOM,atom,Cosmos,2020-01-01,2026-10-30,
+UNI,uni,Uniswap,2020-01-01,2026-10-30,
+ETC,etc,Ethereum Classic,2020-01-01,2026-10-30,
+BCH,bch,Bitcoin Cash,2020-01-01,2026-10-30,
+FIL,fil,Filecoin,2020-01-01,2026-10-30,
+NEAR,near,NEAR Protocol,2020-01-01,2026-10-30,

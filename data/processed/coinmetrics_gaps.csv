@@ -1,0 +1,13 @@
+coin,metric,source_asset,kind,start_date,end_date,days
+SOL,PriceUSD,sol,leading,2020-01-01,2020-04-09,100
+SOL,CapMrktEstUSD,sol,leading,2020-01-01,2020-04-10,101
+DOT,PriceUSD,dot,leading,2020-01-01,2020-08-19,232
+DOT,CapMrktEstUSD,dot,leading,2020-01-01,2020-08-22,235
+AVAX,PriceUSD,avax,leading,2020-01-01,2020-09-22,266
+AVAX,CapMrktEstUSD,avax,leading,2020-01-01,2020-09-22,266
+UNI,PriceUSD,uni,leading,2020-01-01,2020-09-17,261
+UNI,CapMrktEstUSD,uni,leading,2020-01-01,2020-09-17,261
+FIL,PriceUSD,fil,leading,2020-01-01,2020-10-15,289
+FIL,CapMrktEstUSD,fil,leading,2020-01-01,2020-10-15,289
+NEAR,PriceUSD,near,leading,2020-01-01,2020-10-14,288
+NEAR,CapMrktEstUSD,near,leading,2020-01-01,2020-11-22,327
