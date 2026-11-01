@@ -1,0 +1,21 @@
+coin,binance_pairs,coingecko_id,coingecko_symbol,coingecko_name,source_url,notes,catalog_fetched_at
+BTC,BTCUSDT,bitcoin,btc,Bitcoin,https://www.coingecko.com/en/coins/bitcoin,,2026-10-31T22:16:36.976582+00:00
+ETH,ETHUSDT,ethereum,eth,Ethereum,https://www.coingecko.com/en/coins/ethereum,,2026-10-31T22:16:36.976582+00:00
+BNB,BNBUSDT,binancecoin,bnb,BNB,https://www.coingecko.com/en/coins/binancecoin,,2026-10-31T22:16:36.976582+00:00
+XRP,XRPUSDT,ripple,xrp,XRP,https://www.coingecko.com/en/coins/ripple,,2026-10-31T22:16:36.976582+00:00
+ADA,ADAUSDT,cardano,ada,Cardano,https://www.coingecko.com/en/coins/cardano,,2026-10-31T22:16:36.976582+00:00
+SOL,SOLUSDT,solana,sol,Solana,https://www.coingecko.com/en/coins/solana,,2026-10-31T22:16:36.976582+00:00
+DOGE,DOGEUSDT,dogecoin,doge,Dogecoin,https://www.coingecko.com/en/coins/dogecoin,,2026-10-31T22:16:36.976582+00:00
+TRX,TRXUSDT,tron,trx,TRON,https://www.coingecko.com/en/coins/tron,,2026-10-31T22:16:36.976582+00:00
+DOT,DOTUSDT,polkadot,dot,Polkadot,https://www.coingecko.com/en/coins/polkadot,,2026-10-31T22:16:36.976582+00:00
+LTC,LTCUSDT,litecoin,ltc,Litecoin,https://www.coingecko.com/en/coins/litecoin,,2026-10-31T22:16:36.976582+00:00
+LINK,LINKUSDT,chainlink,link,Chainlink,https://www.coingecko.com/en/coins/chainlink,,2026-10-31T22:16:36.976582+00:00
+AVAX,AVAXUSDT,avalanche-2,avax,Avalanche,https://www.coingecko.com/en/coins/avalanche-2,,2026-10-31T22:16:36.976582+00:00
+POL,MATICUSDT+POLUSDT,polygon-ecosystem-token,pol,POL (ex-MATIC),https://www.coingecko.com/en/coins/polygon-ecosystem-token,POL after MATIC migration; no legacy MATIC history requested,2026-10-31T22:16:36.976582+00:00
+XLM,XLMUSDT,stellar,xlm,Stellar,https://www.coingecko.com/en/coins/stellar,,2026-10-31T22:16:36.976582+00:00
+ATOM,ATOMUSDT,cosmos,atom,Cosmos Hub,https://www.coingecko.com/en/coins/cosmos,,2026-10-31T22:16:36.976582+00:00
+UNI,UNIUSDT,uniswap,uni,Uniswap,https://www.coingecko.com/en/coins/uniswap,,2026-10-31T22:16:36.976582+00:00
+ETC,ETCUSDT,ethereum-classic,etc,Ethereum Classic,https://www.coingecko.com/en/coins/ethereum-classic,,2026-10-31T22:16:36.976582+00:00
+BCH,BCHUSDT,bitcoin-cash,bch,Bitcoin Cash,https://www.coingecko.com/en/coins/bitcoin-cash,,2026-10-31T22:16:36.976582+00:00
+FIL,FILUSDT,filecoin,fil,Filecoin,https://www.coingecko.com/en/coins/filecoin,,2026-10-31T22:16:36.976582+00:00
+NEAR,NEARUSDT,near,near,NEAR Protocol,https://www.coingecko.com/en/coins/near,,2026-10-31T22:16:36.976582+00:00
